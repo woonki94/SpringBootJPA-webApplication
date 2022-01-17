@@ -17,6 +17,7 @@ import static org.junit.Assert.*;
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class MemberRepositoryTest {
+/**
     @Autowired
     MemberRepository memberRepository;
     @Test
@@ -35,4 +36,5 @@ public class MemberRepositoryTest {
         System.out.println("findMember == member" + (findMember == member));
 
     }
+    **/
 }

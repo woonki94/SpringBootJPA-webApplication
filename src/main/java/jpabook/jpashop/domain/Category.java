@@ -32,5 +32,9 @@ public class Category {
     @JoinColumn(name = "parent")
     private List<Category> child = new ArrayList<>();
 
+    public void addChildCategory(Category child){
+        this.child.add(child);
+        this.setParent(this);
+    }
 
 }

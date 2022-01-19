@@ -18,7 +18,7 @@ public class ItemRepository {
             em.persist(item);
         }
         else{
-            em.merge(item);
+            em.merge(item); // 준영속 상태의 엔티티를 영속상태로 변경할때 merge 사용
         }
     }
 
